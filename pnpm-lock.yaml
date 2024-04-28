@@ -18,7 +18,7 @@ importers:
         specifier: latest
         version: 1.13.3
 
-  apps/api:
+  apps/express:
     dependencies:
       '@repo/logger':
         specifier: workspace:*
@@ -88,7 +88,7 @@ importers:
         specifier: ^5.3.3
         version: 5.4.5
 
-  apps/web:
+  apps/nextjs:
     dependencies:
       '@repo/ui':
         specifier: workspace:*
