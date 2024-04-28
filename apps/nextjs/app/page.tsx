@@ -36,18 +36,19 @@ export default function Web() {
   };
 
   return (
-    <div>
-      <h1>Web</h1>
+    <div className="p-2">
+      <h1 className="block text-2xl my-3 mx-0 font-bold">Web</h1>
       <form onSubmit={onSubmit}>
         <label htmlFor="name">Name </label>
         <input
+          className="border"
           type="text"
           name="name"
           id="name"
           value={name}
           onChange={onChange}
         ></input>
-        <Button type="submit">Submit</Button>
+        <Button type="submit" className="p-[1px] rounded border border-black bg-neutral-200">Submit</Button>
       </form>
       {error && (
         <div>
@@ -57,9 +58,9 @@ export default function Web() {
       )}
       {response && (
         <div>
-          <h3>Greeting</h3>
+          <h3 className="block text-2xl my-3 mx-0 font-bold">Greeting</h3>
           <p>{response.message}</p>
-          <Button onClick={onReset}>Reset</Button>
+          <Button onClick={onReset} className="p-[1px] rounded border border-black bg-neutral-200">Reset</Button>
         </div>
       )}
     </div>
